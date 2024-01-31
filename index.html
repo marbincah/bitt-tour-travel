@@ -2,14 +2,15 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>BITT Tour & Travel | Sewa Mobil Surabaya</title>
     <style>
         body {
             margin: 0;
             padding: 0;
+            padding-bottom: 50px;
             position: relative;
         }
 
@@ -26,13 +27,13 @@
             font-size: 100%;
             font: inherit;
             vertical-align: baseline;
-            font-family: 'Verdana', sans-serif;
+            font-family: "Verdana", sans-serif;
             font-weight: 100;
         }
 
         .nav.desktop {
             width: 100vw;
-            background: rgba(249,154,13,1);
+            background: rgba(249, 154, 13, 1);
             height: 60px;
             position: fixed;
             top: 0;
@@ -41,7 +42,7 @@
             justify-content: space-between;
         }
 
-        .nav.desktop .logo img{
+        .nav.desktop .logo img {
             width: 55px;
             height: 55px;
             margin-left: 30px;
@@ -57,10 +58,11 @@
 
         .nav.desktop li:hover {
             background: #000;
-            transition: background .3s;
+            transition: background 0.3s;
         }
+
         .nav.nav.desktop li:hover .nav-link {
-            color:  rgba(249,154,13,1)
+            color: rgba(249, 154, 13, 1);
         }
 
         .nav-link {
@@ -106,6 +108,15 @@
             height: 50vh;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
             overflow: scroll;
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .masthead-text::-webkit-scrollbar {
+            display: none;
         }
 
         .masthead-text h1 {
@@ -114,11 +125,9 @@
             letter-spacing: 5px;
         }
 
-
         .masthead-text i {
             font-size: 32px;
         }
-
 
         .masthead-text p {
             margin-top: 30px;
@@ -224,7 +233,7 @@
         .catalogue-content {
             width: 100%;
             display: flex;
-            justify-content: space-between
+            justify-content: space-between;
         }
 
         .catalogue-content .cars {
@@ -239,7 +248,7 @@
         .catalogue-content .cars .tag {
             position: absolute;
             top: 0px;
-            right:0px;
+            right: 0px;
             border-top-right-radius: 30px;
             border-bottom-left-radius: 15px;
             background: red;
@@ -259,6 +268,7 @@
         .catalogue-content .cars .cta-wrapper {
             margin: 30px 0 10px;
         }
+
         .catalogue-content .cars .cta-button {
             padding: 10px;
             color: black;
@@ -272,16 +282,29 @@
             color: white;
         }
 
+        .fee-estimation #form {
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
 
+        .fee-estimation #form select, input {
+            margin: 0px 20px;
+        }
+
+        .estimated-fee {
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
     <div class="nav desktop">
-        <a class="logo"><img src="bitt-logo.png"></a>
+        <a class="logo"><img src="bitt-logo.png" /></a>
         <ul>
             <li><a href="#" class="nav-link">Tentang Kami</a></li>
-            <li><a href="#" class="nav-link"><em>Katalog</em></a></li>
+            <li>
+                <a href="#" class="nav-link"><em>Katalog</em></a>
+            </li>
             <li><a href="#" class="nav-link">Galeri</a></li>
             <li><a href="#" class="nav-link">FAQ</a></li>
             <li><a href="#" class="nav-link">Kontak Kami</a></li>
@@ -290,13 +313,16 @@
     <div class="masthead">
         <img class="hero"
             src="https://source.unsplash.com/white-car-on-road-near-body-of-water-during-daytime-iAjaEx3eGKg"
-            alt="minibus road trip">
+            alt="minibus road trip" />
         <div class="overlay"></div>
         <div class="masthead-text">
             <h1>BITT Tour & Travel</h1>
             <i>Travel your dream with us</i>
-            <p>Kami hadir untuk memudahkan perjalanan Anda dengan armada yang nyaman dan terpelihara, driver yang sabar
-                dan berpengalaman di bidangnya, serta harga yang terjangkau.</p>
+            <p>
+                Kami hadir untuk memudahkan perjalanan Anda dengan armada yang nyaman
+                dan terpelihara, driver yang sabar dan berpengalaman di bidangnya,
+                serta harga yang terjangkau.
+            </p>
 
             <div class="cta-container">
                 <a class="cta-button" href="#contact-us">Pesan Sekarang</a>
@@ -306,14 +332,14 @@
         <div class="masthead-gallery">
             <div class="gallery-column">
                 <img class="img-1" src="https://source.unsplash.com/shark-and-crocodile-statue-yVwiHXoTrnU"
-                    alt="Surabaya icon">
+                    alt="Surabaya icon" />
                 <img class="img-2"
-                    src="https://source.unsplash.com/cars-on-road-near-city-buildings-during-daytime-ARPUuuJdao8">
+                    src="https://source.unsplash.com/cars-on-road-near-city-buildings-during-daytime-ARPUuuJdao8" />
             </div>
             <div class="gallery-column">
-                <img class="img-3" src="https://source.unsplash.com/man-riding-motor-scooter-3tQbU_kqYlA">
+                <img class="img-3" src="https://source.unsplash.com/man-riding-motor-scooter-3tQbU_kqYlA" />
                 <img class="img-4"
-                    src="https://source.unsplash.com/the-sun-is-setting-over-a-highway-near-the-ocean-Lo3x103iBew">
+                    src="https://source.unsplash.com/the-sun-is-setting-over-a-highway-near-the-ocean-Lo3x103iBew" />
             </div>
         </div>
     </div>
@@ -321,29 +347,38 @@
         <div class="about-us">
             <h2>Tentang BITT Tour & Travel</h2>
             <div class="about-us-content">
-                <img src="https://source.unsplash.com/white-van-running-on-road-bSGFdq_WkEM">
-                <p>BITT Tour & Travel, bagian dari PT. BITT Bumi Nusantara, beroperasi di Surabaya Barat, menyediakan
-                    layanan sewa mobil yang responsif sejak pertengahan 2019. Awalnya berbasis di Bali, dampak pandemi
-                    COVID-19 mendorong kami kembali ke Surabaya pada 2020. Perubahan ini mencerminkan ketangguhan dan
-                    komitmen kami untuk memberikan layanan terbaik di tengah tantangan.<br><br>Adaptabilitas BITT Tour &
-                    Travel tidak hanya menanggapi situasi eksternal, tetapi juga menunjukkan fokus kami pada pelanggan
-                    lokal. Kami percaya perjalanan bukan hanya tentang destinasi, melainkan pengalaman dan kenyamanan.
-                    Sebagai tim BITT Tour & Travel, kami berkomitmen memberikan solusi sewa mobil yang efisien dan
-                    berkesan, memastikan setiap perjalanan tidak hanya praktis, tetapi juga meninggalkan kenangan tak
-                    terlupakan.</p>
+                <img src="https://source.unsplash.com/white-van-running-on-road-bSGFdq_WkEM" />
+                <p>
+                    BITT Tour & Travel, bagian dari PT. BITT Bumi Nusantara, beroperasi
+                    di Surabaya Barat, menyediakan layanan sewa mobil yang responsif
+                    sejak pertengahan 2019. Awalnya berbasis di Bali, dampak pandemi
+                    COVID-19 mendorong kami kembali ke Surabaya pada 2020. Perubahan ini
+                    mencerminkan ketangguhan dan komitmen kami untuk memberikan layanan
+                    terbaik di tengah tantangan.<br /><br />Adaptabilitas BITT Tour &
+                    Travel tidak hanya menanggapi situasi eksternal, tetapi juga
+                    menunjukkan fokus kami pada pelanggan lokal. Kami percaya perjalanan
+                    bukan hanya tentang destinasi, melainkan pengalaman dan kenyamanan.
+                    Sebagai tim BITT Tour & Travel, kami berkomitmen memberikan solusi
+                    sewa mobil yang efisien dan berkesan, memastikan setiap perjalanan
+                    tidak hanya praktis, tetapi juga meninggalkan kenangan tak
+                    terlupakan.
+                </p>
             </div>
         </div>
         <div class="catalogue">
             <h2>Armada Kami</h2>
             <div class="catalogue-content">
                 <div class="cars">
-                    <img class="cars-img" src="toyota-innova.png">
+                    <img class="cars-img" src="toyota-innova.png" />
                     <div class="cars-description">
                         <h3>Toyota Innova</h3>
                         <p>Mulai dari <b>Rp750.000/hari</b></p>
                         <p>Kapasitas: 6 penumpang</p>
                         <p>Fasilitas: driver, BBM, AC & Audio.</p>
-                        <p>Melayani sewa mobil reguler, airport transfer, point-to-point transfer</p>
+                        <p>
+                            Melayani sewa mobil reguler, airport transfer, point-to-point
+                            transfer
+                        </p>
                     </div>
                     <div class="cta-wrapper">
                         <a class="cta-button cta-solid" href="#contact-us">Pesan Sekarang</a>
@@ -352,13 +387,16 @@
                 </div>
                 <div class="cars">
                     <div class="tag">PALING DICARI</div>
-                    <img class="cars-img" src="toyota-hiace.png">
+                    <img class="cars-img" src="toyota-hiace.png" />
                     <div class="cars-description">
                         <h3>Toyota Hiace</h3>
                         <p>Mulai dari <b>Rp1.000.000/hari</b></p>
                         <p>Kapasitas: 14 penumpang</p>
                         <p>Fasilitas: driver, BBM, AC, Audio & TV Monitor.</p>
-                        <p>Melayani sewa mobil reguler, airport transfer, point-to-point transfer</p>
+                        <p>
+                            Melayani sewa mobil reguler, airport transfer, point-to-point
+                            transfer
+                        </p>
                     </div>
                     <div class="cta-wrapper">
                         <a class="cta-button cta-solid" href="#contact-us">Pesan Sekarang</a>
@@ -366,13 +404,16 @@
                     </div>
                 </div>
                 <div class="cars">
-                    <img class="cars-img" src="toyota-fortuner.png">
+                    <img class="cars-img" src="toyota-fortuner.png" />
                     <div class="cars-description">
                         <h3>Toyota Fortuner</h3>
                         <p>Mulai dari <b>Rp1.000.000/hari</b></p>
                         <p>Kapasitas: 6 penumpang</p>
                         <p>Fasilitas: driver, BBM, AC & Audio.</p>
-                        <p>Melayani sewa mobil reguler, airport transfer, point-to-point transfer</p>
+                        <p>
+                            Melayani sewa mobil reguler, airport transfer, point-to-point
+                            transfer
+                        </p>
                     </div>
                     <div class="cta-wrapper">
                         <a class="cta-button cta-solid" href="#contact-us">Pesan Sekarang</a>
@@ -381,9 +422,87 @@
                 </div>
             </div>
         </div>
-    </div>
-    <script>
-    </script>
+        <div class="fee-estimation">
+            <form id="form">
+                <label for="cars">Saya ingin menyewa </label>
+                <select name="cars" id="cars">
+                    <option value="">mobil</option>
+                    <option value="hiace">TOYOTA HIACE COMMUTER</option>
+                    <option value="inova">TOYOTA INNOVA</option>
+                    <option value="fortuner">TOYOTA FORTUNER</option>
+                </select>
+                <label for="destination">untuk area</label>
+                <select name="destination" id="destination">
+                    <option value="">tujuan</option>
+                    <option value="zona-0">Zona 0</option>
+                    <option value="zona-1">Zona 1</option>
+                    <option value="zona-2">Zona 2</option>
+                </select>
+                <label>selama</label>
+                <input type="number" id="days">
+                <div>hari</div>
+            </form>
+            <div class="estimated-fee">
+                <div>Estimasi Harga</div>
+                <div id="fee"></div>
+            </div>
+            <div>
+            </div>
+            <script>
+                const cars = document.getElementById("cars");
+                const destination = document.getElementById("destination");
+                const days = document.getElementById("days");
+                const estFee = document.getElementById("fee");
+                var fee;
+                var dailyfee = 0;
+
+                cars.addEventListener("change", calcEstFee)
+                destination.addEventListener("change", calcEstFee)
+                days.addEventListener("keyup", calcEstFee)
+
+                function calcEstFee() {
+                    console.log("days", days.value);
+                    console.log("destination", destination.value);
+                    console.log("cars", cars.value);
+                    if (days.value) {
+                        if (cars.value == "hiace") {
+                            if (destination.value == "zona-0") {
+                                dailyfee = 1000000
+                            } else if (destination.value == "zona-1") {
+                                dailyfee = 1300000
+                            } else if (destination.value == "zona-2") {
+                                dailyfee = 1600000
+                            }
+                        } else if (cars.value == "inova") {
+                            if (destination.value == "zona-0") {
+                                dailyfee = 750000
+                            } else if (destination.value == "zona-1") {
+                                dailyfee = 1300000
+                            } else if (destination.value == "zona-2") {
+                                dailyfee = 1600000
+                            }
+                        } else if (cars.value == "fortuner") {
+                            if (destination.value == "zona-0") {
+                                dailyfee = 1000000
+                            } else if (destination.value == "zona-1") {
+                                dailyfee = 1800000
+                            } else if (destination.value == "zona-2") {
+                                dailyfee = 2100000
+                            }
+                        } else {
+                            dailyfee = 0
+                        }
+                        fee = days.value * dailyfee
+                        estFee.innerHTML = formatRupiah(fee)
+                    }
+                }
+
+                function formatRupiah(money) {
+                    return new Intl.NumberFormat('id-ID',
+                        { style: 'currency', currency: 'IDR' }
+                    ).format(money);
+                }
+            </script>
 </body>
 
 </html>
